@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+.callback-phone {
+  display: flex;
+  gap: 2.3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #2D4585;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  &:hover {
+    color: #2D4585;
+  }
+}

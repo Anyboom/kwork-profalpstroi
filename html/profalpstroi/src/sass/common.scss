@@ -1,21 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Onest", sans-serif;
+  font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 300;
+  font-size: 1.6rem;
+  background: red;
+  background: linear-gradient(45deg, rgba(232,247,254,1) 0%, rgba(243,250,253,1) 100%);
+  overflow-x: hidden;
 }
-
-b {
-  font-weight: 600;
-}
-
-.container {
-  max-width: 103.125rem;
-  padding: 0 .9375rem;
-}
-
-@media (min-width: 71.25rem) {
-  .container {
-    padding: initial;
-  }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: white url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 90% center;
+  padding-right: 25px;
 }

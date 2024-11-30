@@ -1,6 +1,18 @@
 {% extends 'templates/default.twig' %}
 
-{% block title %}Main page{% endblock %}
+{% block title %}
+    Профальстрой
+{% endblock %}
+
 {% block page %}
-  {% include 'templates/pages/index.twig' %}
+    {% include 'templates/parts/background.twig' %}
+    {% include 'templates/parts/banner.twig' %}
+    {% include 'templates/parts/types-of-work.twig' %}
+    {% include 'templates/parts/quality.twig' %}
+    {% include 'templates/parts/consultation.twig' %}
+    {% include 'templates/parts/changes.twig' %}
+    {% include 'templates/parts/price-list.twig' %}
+    {% include 'templates/parts/disadvantages.twig' %}
+    {% include 'templates/parts/steps.twig' %}
+    {% include 'templates/parts/phone-question.twig' %}
 {% endblock %}

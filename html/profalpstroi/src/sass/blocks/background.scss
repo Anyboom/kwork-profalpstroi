@@ -1,0 +1,42 @@
+@use "../mixins" as *;
+
+.background {
+  position: absolute;
+
+  @include vp-1279 {
+    display: none;
+  }
+
+  &_1 {
+    top: 220rem;
+  }
+  &_2 {
+    right: 0;
+    top: 205rem;
+  }
+  &_3 {
+    top: 405rem;
+    &_duplicate {
+      top: 317rem;
+      right: 0;
+    }
+  }
+  &_4 {
+    top: 400rem;
+    z-index: -1;
+  }
+  &_5 {
+    top: 570rem;
+    z-index: -1;
+    right: 0;
+  }
+  &_6 {
+    top: 810rem;
+    z-index: -1;
+  }
+  &_7 {
+    top: 780rem;
+    z-index: -1;
+    right: 0;
+  }
+}

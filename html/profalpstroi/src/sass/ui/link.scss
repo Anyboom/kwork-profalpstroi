@@ -1,0 +1,16 @@
+.link {
+  user-select: none;
+  cursor: pointer;
+  &_underline {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &_blue {
+    color: #323BF4;
+  }
+  &_red {
+    color: #FF595A;
+  }
+}

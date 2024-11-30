@@ -1,0 +1,50 @@
+<section class="types-of-work">
+    <div class="main-container">
+        <div class="types-of-work__inner">
+            <div class="types-of-work__header">
+                <h2 class="types-of-work__title"><strong>Уже 9 лет выполняем на совесть</strong> и с гарантией следующие
+                    виды работ:</h2>
+                <div class="types-of-work__link-wrapper">
+                    <a href="#" class="types-of-work__link">
+                        Посмотреть
+                        <b>все услуги</b>
+                    </a>
+                    <img src="/assets/image/sprite/arrow-right.svg" alt="">
+                </div>
+            </div>
+            <div class="types-of-work__swiper-wrapper">
+                <div class="types-of-work__swiper-prev button button_small">
+                    <img src="/assets/image/sprite/arrow-white-left.svg" alt="#">
+                </div>
+                <div class="types-of-work__swiper-next button button_small">
+                    <img src="/assets/image/sprite/arrow-white-right.svg" alt="#">
+                </div>
+                <div class="types-of-work__swiper">
+                    <div class="swiper-wrapper">
+                        {% for i in 0..10 %}
+                            <div class="swiper-slide">
+                                <div class="card-types-of-work"
+                                     style="background-image: url('/assets/image/slides/type-of-work_slide_item_1.png');">
+                                    <div class="card-types-of-work__content">
+                                        <div class="card-types-of-work__inner">
+                                            <div class="card-types-of-work__text">
+                                                <span class="card-types-of-work__title">Мойка фасадов</span>
+                                                <span class="card-types-of-work__caption">Мойка остекления и фасадов здания</span>
+                                            </div>
+                                            <a class="card-types-of-work__link" href="#">
+                                                <img class="card-types-of-work__link-image"
+                                                     src="/assets/image/sprite/arrow-card.svg" alt="#">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

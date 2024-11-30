@@ -1,0 +1,88 @@
+@use "../mixins" as *;
+
+.header {
+  &_absolute {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1000;
+  }
+  &__information {
+    border-bottom: 1px solid #D9D9D9;
+  }
+  &__information-inner {
+    justify-content: space-between;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+  }
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+
+    @include vp-1023 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+  &__nav-link {
+    text-transform: uppercase;
+    font-family: "Onest", sans-serif;
+    color: #000000;
+    &_active {
+      color: #2B4A88;
+    }
+    &:hover {
+      color: #2B4A88;
+    }
+  }
+  &__map {
+    @include vp-1279 {
+      display: none;
+    }
+  }
+  &__socials {
+    @include vp-767 {
+      display: none;
+    }
+  }
+  &__contacts {
+    @include vp-767 {
+      display: none;
+    }
+  }
+  &__phone {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+  &__mobile-menu {
+    display: none;
+
+    &-link {
+      cursor: pointer;
+    }
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  &__nav-mobile {
+    display: none;
+
+
+    @include vp-767 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+    }
+  }
+}

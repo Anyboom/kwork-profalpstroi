@@ -1,0 +1,19 @@
+@use "../mixins" as *;
+
+.map {
+  display: flex;
+  gap: 2.3rem;
+  flex-direction: row;
+  max-width: 30rem;
+  height: fit-content;
+  &__image {
+    max-width: 9rem;
+    height: 4.5rem;
+  }
+  &__caption {
+    color: #2a2a2a;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+  }
+}

@@ -1,0 +1,99 @@
+@use "../mixins" as *;
+
+.changes {
+  margin-bottom: 10rem;
+  &__header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  &__title {
+    font-size: 3.6rem;
+    max-width: 110rem;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @include vp-1279 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include vp-1023 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-767 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__item-image-top {
+    border-radius: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2.4rem;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("/assets/image/divider.png");
+      background-repeat: no-repeat;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: block;
+      height: 100%;
+      width: 5rem;
+    }
+  }
+  &__before-image {
+    width: 100%;
+    height: 100%;
+  }
+  &__after-image {
+    width: 100%;
+    height: 100%;
+  }
+  &__item-galleria {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2.4rem;
+  }
+  &__item-image {
+    border-radius: 1.6rem;
+    max-height: 12rem;
+    width: 12rem;
+  }
+  &__item-badge {
+    background: #fff;
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.9rem;
+    text-transform: uppercase;
+    font-family: "Onest", sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    &_before {
+      left: 1rem;
+      bottom: 1rem;
+    }
+    &_after {
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
+  &__item-title {
+    text-transform: uppercase;
+    font-family: "Onest", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__item-caption {
+    display: inline-block;
+    font-family: "Onest", sans-serif;
+    font-size: 1.2rem;
+  }
+}

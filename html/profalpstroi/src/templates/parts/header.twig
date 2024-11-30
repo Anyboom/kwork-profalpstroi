@@ -1,43 +1,61 @@
-<header class="header">
-        <div class="header__container container mx-auto">
-            <div class="header__logo logo">
-                <img class="logo__image" src="./assets/image/svg/logo.svg" alt="Профальпстрой Логотип">
-            </div>
-            <div class="header__info info">
-                <img class="info__icon" src="./assets/image/map.png" alt="Иконка карты">
-                <p class="info__text">
-                    Работаем в любой точке Москвы и МО
-                </p>
-            </div>
-            <div class="header__callback callback">
-                <a href="#" class="contact__callback">Обратный звонок</a>
-                 <svg class="w-4 h-4">
-                    <use  xlink:href="./assets/image/sprite.svg#phone"></use>
-                </svg>
-            </div>
-            <div class="header__contact">
-                <div class="contact__time">Пн-Пт 10:00-19:00, Сб-Вс 10:00-17:00</div>
-                <div class="contact__phone">+7 (495) 104-60-04</div>
-            </div>
-            <div class="header__social">
-                    <a class="contact__social-link" href="#"><img src="./assets/image/svg/message-whatsapp.svg" alt="WhatsApp"></a>
-                    <a class="contact__social-link" href="#"><img src="./assets/image/svg/message-telegram.svg" alt="Telegram"></a>
+<header class="header header_absolute">
+    <div class="header__information">
+        <div class="main-container">
+            <div class="header__information-inner">
+                {% include '../blocks/logo.twig' %}
+                <div class="header__map">
+                    {% include '../blocks/map.twig' %}
+                </div>
+                <div class="header__phone">
+                    {% include '../blocks/callback-phone.twig' %}
+                </div>
+                <div class="header__contacts">
+                    {% include '../blocks/contacts-worktime.twig' %}
+                </div>
+                <div class="header__socials">
+                    {% include '../blocks/social-buttons.twig' %}
+                </div>
+                <div class="header__mobile-menu">
+                    <span class="header__mobile-menu-link">
+                        <img src="/assets/image/menu_icon.png" alt="">
+                    </span>
+                </div>
             </div>
         </div>
-        <nav class="header__nav nav container mx-auto">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">ГЛАВНАЯ</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">ВИДЫ РАБОТ</a>
-                    <ul>
-                        <li><a href="">Один</a></li>
-                        <li><a href="">Один</a></li>
-                    </ul>
+    </div>
+    <nav class="header__nav">
+        <div class="main-container">
+            <div class="header__nav-mobile">
+                <div class="header__nav-socials">
+                    {% include '../blocks/social-buttons.twig' %}
+                </div>
+                <div class="header__nav-contacts">
+                    {% include '../blocks/contacts-worktime.twig' %}
+                </div>
+            </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link header__nav-link_active" href="#">Главная</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="#">ПОРТФОЛИО</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">ЦЕНЫ</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">АКЦИИ</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">СТАТЬИ</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">КОНТАКТЫ</a></li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Виды работ</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Портфолио</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Цены</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Акции</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Статьи</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Контакты</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 </header>

@@ -1,0 +1,33 @@
+<section class="changes">
+    <div class="main-container">
+        <div class="changes__header">
+            <h2 class="changes__title">
+                Создаем проекты, которые <strong>вдохновляют</strong> и <strong>оправдывают ожидания</strong>
+            </h2>
+        </div>
+        <div class="changes__list">
+            {% for i in 1..8 %}
+                <div class="changes__item">
+                    <div class="changes__item-image-top">
+                        <div class="changes__item-badge changes__item-badge_before">До</div>
+                        <div class="changes__item-badge changes__item-badge_after">После</div>
+                        <img class="changes__before-image" src="/assets/image/changes_1.png" alt="">
+                        <img class="changes__after-image" src="/assets/image/changes_2.png" alt="">
+                    </div>
+                    <div class="changes__item-galleria">
+                        <img class="changes__item-image" src="/assets/image/changes_1.png" alt="#">
+                        <img class="changes__item-image" src="/assets/image/changes_1.png" alt="#">
+                        <img class="changes__item-image" src="/assets/image/changes_1.png" alt="#">
+                    </div>
+                    <div class="changes__item-content">
+                        <h3 class="changes__item-title">Поликлиника МВД №1</h3>
+                        <span class="changes__item-caption">Адрес объекта Москва, Петровка, 25а ст1</span>
+                        <span class="changes__item-caption">Сроки выполнения 60 дней</span>
+                        <span class="changes__item-caption">Количество альпинистов 6 человек</span>
+                        <span class="changes__item-caption">Вид работ Капитальный ремонт фасада здания</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
