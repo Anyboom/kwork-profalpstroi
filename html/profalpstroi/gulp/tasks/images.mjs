@@ -24,10 +24,6 @@ export const optimizeSvg = () =>
                             active: false,
                         },
                         {
-                            name: 'removeRasterImages',
-                            active: true,
-                        },
-                        {
                             name: 'removeUselessStrokeAndFill',
                             active: false,
                         }],

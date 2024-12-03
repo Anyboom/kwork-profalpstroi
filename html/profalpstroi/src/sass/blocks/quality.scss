@@ -5,6 +5,10 @@
   &__header {
     text-align: center;
     margin-bottom: 5rem;
+
+    @include vp-767 {
+      margin-bottom: 2rem;
+    }
   }
   &__title {
     font-size: 3.6rem;
@@ -16,6 +20,9 @@
       font-size: 2.4rem;
     }
 
+    @include vp-767 {
+      font-size: 1.4rem;
+    }
   }
   &__item {
     @include vp-767 {
@@ -49,12 +56,22 @@
     position: relative;
     margin-bottom: 3rem;
     min-height: 30rem;
+
+    @include vp-767 {
+      min-height: 20rem;
+    }
+
     img {
       position: absolute;
       margin: 0 auto;
       bottom: 0;
       left: 0;
       right: 0;
+
+      @include vp-767 {
+        transform: scale(0.8);
+        transform-origin: center bottom;
+      }
     }
     &::after {
       content: "";
@@ -65,6 +82,10 @@
       height: 20rem;
       bottom: 0;
       z-index: -1;
+
+      @include vp-767 {
+        height: 15rem;
+      }
     }
   }
 }

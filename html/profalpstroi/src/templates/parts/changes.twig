@@ -9,15 +9,17 @@
             {% for i in 1..8 %}
                 <div class="changes__item">
                     <div class="changes__item-image-top">
-                        <div class="changes__item-badge changes__item-badge_before">До</div>
-                        <div class="changes__item-badge changes__item-badge_after">После</div>
-                        <img class="changes__before-image" src="/assets/image/changes_1.png" alt="">
-                        <img class="changes__after-image" src="/assets/image/changes_2.png" alt="">
+                        <div id="changes_{{ i }}" class="twentytwenty-container">
+                            <div class="changes__item-badge changes__item-badge_before">До</div>
+                            <div class="changes__item-badge changes__item-badge_after">После</div>
+                            <img class="changes__item-image-comparer" src="/assets/image/changes/changes_1.png" />
+                            <img class="changes__item-image-comparer" src="/assets/image/changes/changes_2.png" />
+                        </div>
                     </div>
                     <div class="changes__item-galleria">
-                        <img class="changes__item-image" src="/assets/image/changes_1.png" alt="#">
-                        <img class="changes__item-image" src="/assets/image/changes_1.png" alt="#">
-                        <img class="changes__item-image" src="/assets/image/changes_1.png" alt="#">
+                        <img class="changes__item-image" src="/assets/image/changes/changes_1.png" alt="#">
+                        <img class="changes__item-image" src="/assets/image/changes/changes_1.png" alt="#">
+                        <img class="changes__item-image" src="/assets/image/changes/changes_1.png" alt="#">
                     </div>
                     <div class="changes__item-content">
                         <h3 class="changes__item-title">Поликлиника МВД №1</h3>

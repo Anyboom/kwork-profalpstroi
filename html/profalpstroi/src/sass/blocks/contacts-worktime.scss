@@ -1,13 +1,29 @@
+@use "../mixins" as *;
+
 .contacts-worktime {
   display: flex;
   flex-direction: column;
   color: #2a2a2a;
+
+  @include vp-767 {
+    text-align: right;
+  }
+
   &__top {
     font-size: 1.4rem;
     font-weight: 400;
+
+    @include vp-767 {
+      font-size: 1rem;
+    }
   }
   &__bottom {
     font-size: 2.6rem;
     font-weight: 500;
+
+    @include vp-767 {
+      font-size: 1.4rem;
+    }
   }
+
 }

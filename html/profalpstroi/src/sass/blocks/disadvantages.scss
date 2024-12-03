@@ -1,6 +1,9 @@
 @use "../mixins" as *;
 
 .disadvantages {
+  @include vp-767 {
+    margin-bottom: 5rem;
+  }
   &__wrapper {
     display: flex;
     gap: 10rem;
@@ -46,11 +49,21 @@
     @include vp-1023 {
       font-size: 2.4rem;
     }
+
+    @include vp-767 {
+      font-size: 2rem;
+      padding: 1.4rem 2rem;
+    }
   }
   &__cards-item {
     display: flex;
     align-items: center;
     gap: 2.4rem;
+    @include vp-767 {
+      img {
+        max-width: 6.5rem;
+      }
+    }
   }
   &__cards {
     display: flex;
@@ -58,6 +71,7 @@
     flex-direction: column;
   }
   &__cards-content {
+    font-size: 1.2rem;
     span {
       display: inline-block;
     }
@@ -68,5 +82,10 @@
     font-size: 4rem;
     color: #2f2f2f;
     margin-bottom: 4rem;
+
+    @include vp-767 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 }

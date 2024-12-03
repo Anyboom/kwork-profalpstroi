@@ -25,7 +25,7 @@
 @use "blocks/disadvantages";
 @use "blocks/steps";
 @use "blocks/phone-question";
-
+@use "blocks/logo";
 @use "blocks/background";
 
 // UI
@@ -34,6 +34,18 @@
 @use "ui/container";
 @use "ui/button";
 @use "ui/link";
+
+// MODULES
+// ---------------------------------
+
+@use "modules/twenty";
+@use "modules/magnific-popup";
+
+// MODALS
+// ---------------------------------
+
+@use "modals/modal-form";
+
 
 // Tailwind
 // ---------------------------------

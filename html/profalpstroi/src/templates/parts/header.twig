@@ -1,8 +1,40 @@
+<nav class="header__mobile-nav hidden">
+    <div class="header__close">
+        <span class="header__mobile-menu-link">
+            <img src="/assets/image/header/menu_icon.png" alt="">
+        </span>
+    </div>
+    <ul class="header__mobile-nav-list">
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link header__mobile-nav-link_active" href="#">Главная</a>
+        </li>
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#">Виды работ</a>
+        </li>
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#">Портфолио</a>
+        </li>
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#">Цены</a>
+        </li>
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#">Акции</a>
+        </li>
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#">Статьи</a>
+        </li>
+        <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#">Контакты</a>
+        </li>
+    </ul>
+</nav>
 <header class="header header_absolute">
     <div class="header__information">
         <div class="main-container">
             <div class="header__information-inner">
-                {% include '../blocks/logo.twig' %}
+                <div class="header__logo">
+                    {% include '../blocks/logo.twig' %}
+                </div>
                 <div class="header__map">
                     {% include '../blocks/map.twig' %}
                 </div>
@@ -17,7 +49,7 @@
                 </div>
                 <div class="header__mobile-menu">
                     <span class="header__mobile-menu-link">
-                        <img src="/assets/image/menu_icon.png" alt="">
+                        <img src="/assets/image/header/menu_icon.png" alt="">
                     </span>
                 </div>
             </div>
@@ -25,7 +57,7 @@
     </div>
     <nav class="header__nav">
         <div class="main-container">
-            <div class="header__nav-mobile">
+            <div class="header__mobile-information">
                 <div class="header__nav-socials">
                     {% include '../blocks/social-buttons.twig' %}
                 </div>

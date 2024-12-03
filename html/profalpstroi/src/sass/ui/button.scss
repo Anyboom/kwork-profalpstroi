@@ -49,7 +49,12 @@
     padding: 3.5rem 14rem;
 
     @include vp-767 {
+      padding: 1.5rem 7rem;
       font-size: 1rem;
+    }
+
+    @include vp-374 {
+      padding: 1.5rem 3rem;
     }
   }
   &_small {

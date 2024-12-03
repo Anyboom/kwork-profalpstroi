@@ -3,20 +3,24 @@
 
 .consultation {
   margin-bottom: 10rem;
+
+  @include vp-767 {
+    margin-bottom: 5rem;
+  }
   &__wrapper {
     height: 700px;
     width: 100%;
     background: #000;
     border-radius: 1.6rem;
     position: relative;
-    background: url("/assets/image/consultation_background.png");
+    background: url("/assets/image/consultation/consultation_background.png");
     @include vp-767 {
       overflow: hidden;
     }
 
     &::after {
       content: "";
-      background-image: url("/assets/image/consultation_person.png");
+      background-image: url("/assets/image/consultation/consultation_person.png");
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
@@ -37,6 +41,13 @@
     font-weight: bold;
     font-size: 2.4rem;
     color: white;
+
+    @include vp-767 {
+      font-size: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
   }
   &__header {
     position: absolute;
@@ -90,6 +101,7 @@
     @include vp-767 {
       font-size: 2.4rem;
       line-height: 3rem;
+      margin-bottom: 6.5rem;
     }
 
     span {
@@ -132,8 +144,8 @@
     }
 
     @include vp-767 {
-      transform: scale(0.8);
-      width: fit-content;
+      transform: none;
+      //width: fit-content;
       z-index: 1000;
       right: 0;
       top: 2rem;
@@ -147,6 +159,11 @@
       border-radius: 0.4rem;
       outline: none;
       width: 40rem;
+
+      @include vp-767 {
+        width: 100%;
+        padding: 2.5rem 2rem;
+      }
     }
     &-radio {
       color: white;
@@ -158,7 +175,12 @@
       }
 
       @include vp-767 {
-        max-width: 25rem;
+        max-width: 20rem;
+        font-size: 0.8rem;
+        margin-bottom: 9rem;
+        input {
+          margin-right: 1rem;
+        }
       }
     }
     &-input {
@@ -183,6 +205,13 @@
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.6rem;
+
+      @include vp-767 {
+        width: fit-content;
+        padding: 1.5rem 4rem;
+        font-size: 1.2rem;
+      }
+
       &:hover {
         background: rgb(210,60,61);
       }
@@ -196,10 +225,12 @@
       margin-bottom: 4rem;
 
       @include vp-767 {
-        width: fit-content;
+        //width: fit-content;
+        width: 90%;
         flex-direction: column;
         margin: 0 auto 2rem auto;
         gap: 2rem;
+        align-items: end;
       }
     }
     &-bottom {
@@ -210,8 +241,13 @@
         flex-direction: column-reverse;
         align-items: end;
         text-align: right;
+        width: 90%;
+        margin: 0 auto;
         //margin-top: 10rem;
       }
     }
+  }
+  &__decorate-caption-author {
+    max-width: 11rem;
   }
 }

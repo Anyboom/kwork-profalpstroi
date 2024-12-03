@@ -2,6 +2,9 @@
 
 .changes {
   margin-bottom: 10rem;
+  @include vp-767 {
+    margin-bottom: 5rem;
+  }
   &__header {
     text-align: center;
     margin-bottom: 5rem;
@@ -11,6 +14,10 @@
     max-width: 110rem;
     display: inline-block;
     text-transform: uppercase;
+
+    @include vp-767 {
+      font-size: 2.4rem;
+    }
   }
   &__list {
     display: grid;
@@ -26,36 +33,22 @@
     }
 
     @include vp-767 {
-      grid-template-columns: repeat(1, 1fr);
+      display: flex;
+      overflow: scroll;
+      flex-wrap: nowrap;
+      gap: 2rem;
+    }
+  }
+  &__item {
+    @include vp-767 {
+      min-width: calc(100vw - 10%);
     }
   }
   &__item-image-top {
     border-radius: 1.6rem;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
     overflow: hidden;
     position: relative;
     margin-bottom: 2.4rem;
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("/assets/image/divider.png");
-      background-repeat: no-repeat;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      display: block;
-      height: 100%;
-      width: 5rem;
-    }
-  }
-  &__before-image {
-    width: 100%;
-    height: 100%;
-  }
-  &__after-image {
-    width: 100%;
-    height: 100%;
   }
   &__item-galleria {
     display: flex;
@@ -68,7 +61,12 @@
     max-height: 12rem;
     width: 12rem;
   }
+  &__item-image-comparer {
+    width: 100%;
+    max-height: 26rem;
+  }
   &__item-badge {
+    z-index: 1000;
     background: #fff;
     border-radius: 0.6rem;
     padding: 0.4rem 0.9rem;

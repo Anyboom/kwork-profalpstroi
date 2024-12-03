@@ -1,10 +1,10 @@
 @use "../mixins" as *;
 
 .steps {
+  padding-bottom: 5rem;
   margin-bottom: 10rem;
-
   @include vp-767 {
-    margin-bottom: 20rem;
+    overflow: hidden;
   }
   &__wrapper {
     display: flex;
@@ -25,12 +25,16 @@
       flex-basis: 100%;
     }
 
+    @include vp-767 {
+      padding-top: 7rem;
+    }
+
     &::after {
       content: "";
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url("/assets/image/steps_content_background.png");
+      background-image: url("/assets/image/steps/steps_content_background.png");
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
@@ -41,11 +45,15 @@
         right: 5.5rem;
       }
 
-      @include  vp-767 {
+      @include vp-767 {
+        background-image: url("/assets/image/steps/steps_content_background_mobile.png");
+        margin: 0 auto;
+        background-size: contain;
+        width: 100%;
+        top: 0;
         right: 0;
-        left: -6rem;
-        width: 59rem;
-        height: 62rem;
+        left: 0;
+        bottom: 0;
       }
     }
   }
@@ -66,6 +74,8 @@
 
     @include vp-767 {
       font-size: 2rem;
+      max-width: 25rem;
+      line-height: 2rem;
     }
   }
   &__cards {
@@ -79,11 +89,16 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @include vp-767 {
+      justify-content: center;
+    }
   }
   &__item-content {
     font-size: 1.8rem;
     @include vp-767 {
       font-size: 1rem;
+      max-width: 25rem;
     }
   }
   &__number {

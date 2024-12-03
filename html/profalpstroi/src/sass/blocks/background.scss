@@ -40,3 +40,39 @@
     right: 0;
   }
 }
+
+.background_mobile {
+  display: none;
+  position: absolute;
+
+  @include vp-767 {
+    display: block;
+  }
+
+  &_8 {
+    top: 5rem;
+    right: 3rem;
+
+    @include vp-374 {
+      display: none;
+    }
+  }
+
+  &_9 {
+    top: -22rem;
+    left: -4rem;
+
+    @include vp-374 {
+      display: none;
+    }
+  }
+
+  &_10 {
+    top: -10rem;
+    right: -4rem;
+
+    @include vp-374 {
+      display: none;
+    }
+  }
+}
