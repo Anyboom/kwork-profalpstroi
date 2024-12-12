@@ -1,13 +1,13 @@
 @use "../mixins" as *;
 
 .banner {
-  padding-top: 30rem;
-  min-height: 140rem;
+  padding-top: 20rem;
+  min-height: 120rem;
   position: relative;
 
   @include vp-767 {
     min-height: 85rem;
-    padding-top: 15rem;
+    padding-top: 5rem;
   }
 
   &::before {
@@ -108,13 +108,13 @@
       height: 12rem;
       width: 3.5rem;
       bottom: -1.5rem;
-      left: 11.5rem;
+      left: -1.5rem;
       z-index: -1;
 
       @include vp-767 {
         bottom: -81px;
         transform: rotate(90deg) scale(1.2);
-        right: 67px;
+        right: 190px;
         left: auto;
       }
     }
@@ -128,15 +128,6 @@
       background-size: cover;
       top: 13rem;
       z-index: -1;
-
-      //@include vp-767 {
-      //  width: 107rem;
-      //  height: 25.5rem;
-      //  top: 0;
-      //  transform: scale(0.4);
-      //  left: -34rem;
-      //  background-size: cover;
-      //}
     }
   }
   &__subtitle {
@@ -163,18 +154,9 @@
   }
   &__title-top {
     font-size: 12.8rem;
-
-    //@include vp-767 {
-    //  font-size: 6rem;
-    //}
   }
   &__title-bottom {
     font-size: 15rem;
-    text-align: right;
-
-    //@include vp-767 {
-    //  font-size: 7rem;
-    //}
   }
   &__information {
     max-width: 65rem;

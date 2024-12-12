@@ -1,0 +1,27 @@
+<section class="views-of-work">
+    <div class="main-container">
+        <div class="views-of-work__wrapper">
+            <h1 class="views-of-work__title">Виды работ</h1>
+            <span>Главная/Виды работ</span>
+            <div class="views-of-work__slides">
+                {% for i in 0..11 %}
+                    <div class="card-types-of-work"
+                         style="background-image: url('/assets/image/slides/type-of-work_slide_item_1.png');">
+                        <div class="card-types-of-work__content">
+                            <div class="card-types-of-work__inner">
+                                <div class="card-types-of-work__text">
+                                    <span class="card-types-of-work__title">Мойка фасадов</span>
+                                    <span class="card-types-of-work__caption">Мойка остекления и фасадов здания</span>
+                                </div>
+                                <a class="card-types-of-work__link" href="#">
+                                    <img class="card-types-of-work__link-image"
+                                         src="/assets/image/sprite/arrow-card.svg" alt="#">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

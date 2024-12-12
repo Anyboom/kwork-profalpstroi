@@ -34,7 +34,7 @@
 
     @include vp-767 {
       display: flex;
-      overflow: scroll;
+      overflow-x: scroll;
       flex-wrap: nowrap;
       gap: 2rem;
     }

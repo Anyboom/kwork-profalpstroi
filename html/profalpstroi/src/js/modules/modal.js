@@ -4,4 +4,7 @@ export const modal = () => {
         fixedContentPos: true,
         fixedBgPos: false,
     });
+    $('.modal-image').magnificPopup({
+        type: 'image',
+    });
 }

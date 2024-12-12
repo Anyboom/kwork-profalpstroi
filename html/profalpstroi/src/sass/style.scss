@@ -19,6 +19,7 @@
 @use "blocks/types-of-work";
 @use "blocks/card-types-of-work";
 @use "blocks/quality";
+@use "blocks/quality-slider";
 @use "blocks/consultation";
 @use "blocks/changes";
 @use "blocks/price-list";
@@ -27,6 +28,9 @@
 @use "blocks/phone-question";
 @use "blocks/logo";
 @use "blocks/background";
+@use "blocks/contacts";
+@use "blocks/views-of-work";
+@use "blocks/articles";
 
 // UI
 // ---------------------------------

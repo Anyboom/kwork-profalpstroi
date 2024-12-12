@@ -1,0 +1,33 @@
+@use "../mixins" as *;
+
+.articles {
+  padding: 5rem 0;
+  &__title {
+    font-family: "Onest", sans-serif;
+    font-size: 6.4rem;
+    font-weight: 700;
+
+    @include vp-767 {
+      font-size: 4.2rem;
+    }
+  }
+  &__slides {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10rem;
+
+    @include vp-1279 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include vp-1023 {
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 5rem;
+    }
+
+    @include vp-520 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

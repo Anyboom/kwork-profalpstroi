@@ -1,0 +1,20 @@
+<section class="quality-slider">
+    <div class="main-container">
+        <div class="quality-slider__wrapper">
+            {% for i in 1..4 %}
+            <div class="quality-slider__item">
+                <div class="quality-slider__item-text">
+                    <span class="quality-slider__item-title">Имеются абсолютно все разрешения</span>
+                    <span class="quality-slider__item-caption">
+                        Адрес объекта Москва, Петровка, 25а ст1 Сроки выполнения 60 дней. Количество альпинистов 6 человек
+Вид работ Капитальный ремонт фасада здания
+                    </span>
+                </div>
+                <div class="quality-slider__item-image-wrapper">
+                    <img src="/assets/image/quality/quality_{{ i }}.png" alt="#" class="quality-slider__item-image">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
