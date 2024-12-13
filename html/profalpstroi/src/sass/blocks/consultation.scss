@@ -8,7 +8,6 @@
     margin-bottom: 5rem;
   }
   &__wrapper {
-    overflow-x: hidden;
     height: 700px;
     width: 100%;
     border-radius: 1.6rem;
@@ -20,6 +19,10 @@
 
     @include vp-1439 {
       height: 590px;
+    }
+
+    @include vp-1023 {
+      overflow-x: hidden;
     }
 
     @include vp-767 {
