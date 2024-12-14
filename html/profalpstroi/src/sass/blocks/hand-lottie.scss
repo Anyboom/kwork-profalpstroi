@@ -1,0 +1,12 @@
+@use "../mixins" as *;
+
+
+.hand-lottie {
+  display: none;
+  justify-content: right;
+  margin: 1rem 0;
+
+  @include vp-767 {
+    display: flex;
+  }
+}
